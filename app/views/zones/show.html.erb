@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Agebs:</strong>
+  <%= @zone.agebs %>
+</p>
+
+<p>
+  <strong>Life cost:</strong>
+  <%= @zone.life_cost %>
+</p>
+
+<p>
+  <strong>Working population:</strong>
+  <%= @zone.working_population %>
+</p>
+
+<p>
+  <strong>Total population:</strong>
+  <%= @zone.total_population %>
+</p>
+
+<p>
+  <strong>Student population:</strong>
+  <%= @zone.student_population %>
+</p>
+
+<p>
+  <strong>Geo latitude:</strong>
+  <%= @zone.geo_latitude %>
+</p>
+
+<p>
+  <strong>Geo longitude:</strong>
+  <%= @zone.geo_longitude %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @zone.name %>
+</p>
+
+<%= link_to 'Edit', edit_zone_path(@zone) %> |
+<%= link_to 'Back', zones_path %>

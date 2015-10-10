@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Zones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Agebs</th>
+      <th>Life cost</th>
+      <th>Working population</th>
+      <th>Total population</th>
+      <th>Student population</th>
+      <th>Geo latitude</th>
+      <th>Geo longitude</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zones.each do |zone| %>
+      <tr>
+        <td><%= zone.agebs %></td>
+        <td><%= zone.life_cost %></td>
+        <td><%= zone.working_population %></td>
+        <td><%= zone.total_population %></td>
+        <td><%= zone.student_population %></td>
+        <td><%= zone.geo_latitude %></td>
+        <td><%= zone.geo_longitude %></td>
+        <td><%= zone.name %></td>
+        <td><%= link_to 'Show', zone %></td>
+        <td><%= link_to 'Edit', edit_zone_path(zone) %></td>
+        <td><%= link_to 'Destroy', zone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zone', new_zone_path %>

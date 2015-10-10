@@ -1,0 +1,49 @@
+<%= form_for(@zone) do |f| %>
+  <% if @zone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@zone.errors.count, "error") %> prohibited this zone from being saved:</h2>
+
+      <ul>
+      <% @zone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :agebs %><br>
+    <%= f.text_field :agebs %>
+  </div>
+  <div class="field">
+    <%= f.label :life_cost %><br>
+    <%= f.number_field :life_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :working_population %><br>
+    <%= f.number_field :working_population %>
+  </div>
+  <div class="field">
+    <%= f.label :total_population %><br>
+    <%= f.number_field :total_population %>
+  </div>
+  <div class="field">
+    <%= f.label :student_population %><br>
+    <%= f.number_field :student_population %>
+  </div>
+  <div class="field">
+    <%= f.label :geo_latitude %><br>
+    <%= f.text_field :geo_latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :geo_longitude %><br>
+    <%= f.text_field :geo_longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

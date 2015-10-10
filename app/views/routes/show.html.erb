@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @route.name %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @route.cost %>
+</p>
+
+<p>
+  <strong>Time in mins:</strong>
+  <%= @route.time_in_mins %>
+</p>
+
+<p>
+  <strong>Zone1:</strong>
+  <%= @route.zone1 %>
+</p>
+
+<p>
+  <strong>Zone2:</strong>
+  <%= @route.zone2 %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
