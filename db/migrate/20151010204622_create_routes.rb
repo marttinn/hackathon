@@ -2,8 +2,8 @@ class CreateRoutes < ActiveRecord::Migration
   def change
     create_table :routes do |t|
       t.string :name
-      t.int :cost
-      t.int :time_in_mins
+      t.integer :cost
+      t.integer :time_in_mins
       t.references :zone1, index: true
       t.references :zone2, index: true
 
