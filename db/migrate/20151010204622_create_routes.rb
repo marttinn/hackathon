@@ -8,6 +8,5 @@ class CreateRoutes < ActiveRecord::Migration
       t.integer :zone2
 
       t.timestamps null: false
-
-  end
+    end
 end
